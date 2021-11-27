@@ -1,12 +1,10 @@
-
- export const firebaseConfig = {
-  apiKey: "AIzaSyCdfvhHhfQe2aBNr8UxlrzbPm40aIoC6i0",
-  authDomain: "proyecto-86ee7.firebaseapp.com",
-  databaseURL: "https://proyecto-86ee7-default-rtdb.firebaseio.com/",
-  projectId: "proyecto-86ee7",
-  storageBucket: "proyecto-86ee7.appspot.com",
-  messagingSenderId: "382358970510",
-  appId: "1:382358970510:web:02817b2356031fe929a9df",
-  measurementId: "G-39J1JE77LD"
+export const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
-
